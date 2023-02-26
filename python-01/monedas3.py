@@ -1,8 +1,21 @@
 #Programa para convertir monedas
 #Version 1.0 - convertir soles a dolares
 #Inputs - entradas
-montoSoles = input("Ingrese el monto en soles")
+montoOrigen = input("Ingrese el monto: ")
 #Proceso
-montoDolares = montoSoles * 3.89
-#Outputs - Salidas
-print ("El monto en dolares es:" + montoDolares)
+print(" Opcion 1 - soles a dolares")
+print(" Opcion 2 - dolares a soles")
+opcion = input ("Eliga una opción: ")
+
+if (opcion ==1):
+        montoDolares = float(montoOrigen) / 3.89
+        montoDolaresFormato = "$ {:,.2f}".format(montoDolares)
+        #Outputs - Salidas
+        print ("El monto en dolares es: " + str(montoDolares))
+elif (opcion ==2):
+        montoSoles = float(montoOrigen) * 3.89
+        montoSolesFormato =  "S/. {:,.2f}".format(montoSoles)
+        #Outputs - Salidas
+        print ("El monto en soles es: " + str(montoSolesFormato))
+else:
+        print("ALERTA!!! Debe de seleccionar una opción valida")
