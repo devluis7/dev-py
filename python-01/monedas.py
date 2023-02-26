@@ -12,8 +12,10 @@ if (opcion ==1):
         montoDolaresFormato = "$ {:,.2f}".format(montoDolares)
         #Outputs - Salidas
         print ("El monto en dolares es: " + str(montoDolares))
-else:
+elif (opcion ==2):
         montoSoles = float(montoOrigen) * 3.89
         montoSolesFormato =  "S/. {:,.2f}".format(montoSoles)
         #Outputs - Salidas
         print ("El monto en soles es: " + str(montoSolesFormato))
+else:
+        print("ALERTA!!! Debe de seleccionar una opción valida")
